@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFF"
+    app:layoutDescription="@xml/circularmenu_scene">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        tools:listitem="@layout/item_list" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/background"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:background="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton"
+        app:roundPercent="1" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:drawableTop="@android:drawable/ic_menu_search"
+        android:text="Pesquisar"
+        android:textAllCaps="false"
+        app:layout_constraintCircle="@id/background"
+        app:layout_constraintCircleAngle="270"
+        app:layout_constraintCircleRadius="180dp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:drawableTop="@android:drawable/ic_menu_delete"
+        android:text="Excluir"
+        android:textAllCaps="false"
+        app:layout_constraintCircle="@id/background"
+        app:layout_constraintCircleAngle="330"
+        app:layout_constraintCircleRadius="200dp" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:drawableTop="@android:drawable/ic_menu_edit"
+        android:text="Editar"
+        android:textAllCaps="false"
+        app:layout_constraintCircle="@id/background"
+        app:layout_constraintCircleAngle="300"
+        app:layout_constraintCircleRadius="200dp" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:drawableTop="@android:drawable/ic_menu_share"
+        android:text="Compartilhar"
+        android:textAllCaps="false"
+        app:layout_constraintCircle="@id/background"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="200dp" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:id="@+id/imageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_circle"
+        android:tint="@android:color/holo_green_light"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="36dp"
+        android:rotation="0"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
