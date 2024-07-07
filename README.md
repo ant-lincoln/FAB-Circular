@@ -9,22 +9,22 @@ A ideia do projeto é demonstra como criar um Floating Action Button (FAB) circu
 Possui a seguinte estrutura básica:
 
 |-- app
-    |-- src
-        |-- main
-            |-- java/com/example/motionscenefab
-                |-- MainActivity.kt
-                |-- RecyclerViewAdapter.kt
-            |-- res
-                |-- layout
-                    |-- activity_main.xml (MotionLayout)
-                    |-- item_list.xml
-                |-- xml
-                    |-- circularmenu_scene.xml
-                |-- drawable
-                    |-- shape_circle.xml
-                |-- values
-                    |-- colors.xml
-|-- README.md
+<br>    |-- src
+<br>        |-- main
+<br>            |-- java/com/example/motionscenefab
+<br>                |-- MainActivity.kt
+<br>                |-- RecyclerViewAdapter.kt
+<br>            |-- res
+<br>                |-- layout
+<br>                    |-- activity_main.xml (MotionLayout)
+<br>                    |-- item_list.xml
+<br>                |-- xml
+<br>                    |-- circularmenu_scene.xml
+<br>                |-- drawable
+<br>                    |-- shape_circle.xml
+<br>                |-- values
+<br>                    |-- colors.xml
+<br>|-- README.md
 
 •MainActivity.kt: Atividade principal que configura o MotionLayout e o RecyclerView.
 <br>•RecyclerViewAdapter.kt: Adaptador para RecyclerView, popula dados (só para fins de exemplo).
